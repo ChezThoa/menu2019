@@ -144,3 +144,28 @@ body
 .addfooter{
 	color:blue;
 }
+/*for mobilescreen*/
+@media only  screen and (min-width : 786px){
+#galerie-menu{
+	display: block;
+	width: auto;
+	padding-bottom : 3px;
+}
+.conteneurfooter{
+	width:600px;
+	margin:0 auto;
+}
+
+}
+@media only  screen and (min-width : 1000px){
+	#galerie-menu{
+		display: block;
+		width: auto;
+		padding-bottom : 3px;
+	}
+	.conteneurfooter{
+		widows: 50%;;
+		margin:0 auto;
+	}
+
+}

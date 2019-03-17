@@ -22,9 +22,11 @@
     padding-top:15px;
 }
 body{
-    background-image:url("image/logo_resto.jpg");
+    background-image:url("image/logo_resto.jpg"),url("image/logo_resto.jpg");
     text-align: center;
-    background-repeat: space;
+    background-repeat: repeat-y, repeat-y;
+    background-position: top left, top right;
+    padding-bottom:5px;
 
 }
 /* menu*/

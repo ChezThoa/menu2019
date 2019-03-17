@@ -291,3 +291,11 @@ p.alignright{
     color:red;
     margin-left : 137px;
 }
+/*pour mobile screen*/
+@media only  screen and (min-width : 786px){
+
+    .panorama{
+        width:auto;
+        padding-bottom:3px;
+    }
+}
