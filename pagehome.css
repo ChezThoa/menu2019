@@ -26,8 +26,6 @@ body{
     text-align: center;
     background-repeat: repeat-y, repeat-y;
     background-position: top left, top right;
-    padding-bottom:5px;
-
 }
 /* menu*/
 .effetmenu{
@@ -149,6 +147,6 @@ a:before{
 
 footer{
     margin-top: 50px;
-    margin-bottom:130px;
+    margin-bottom:35px;
     color:blue;
 }
