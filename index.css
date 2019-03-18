@@ -2,12 +2,12 @@
 .entete{
 	text-align: center;
 	font-size:65px;
-	color : white;
+	color : red;
 }
 .sous-ent{
 	text-align: center;
 	margin-bottom: 70px;
-	color : white;
+	color :fuchsia;
 	font-size: 45px;
 }
 
