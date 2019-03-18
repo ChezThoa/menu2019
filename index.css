@@ -1,13 +1,14 @@
 /* l'entête*/
 .entete{
 	text-align: center;
-	font-size:45px;
-	color : blue;
+	font-size:65px;
+	color : white;
 }
 .sous-ent{
 	text-align: center;
 	margin-bottom: 70px;
-	color : blue;
+	color : white;
+	font-size: 45px;
 }
 
 /* le footer*/
@@ -75,10 +76,10 @@
 {
 	width:670px;
 	margin:auto;
-	border:dashed white 15px;
+	 /* border:dashed white 15px;  */
 	border-radius:15px;
-	box-shadow: 0 0 1px black, inset 0px 0px 5px black, 0 0 50px 50px white ;
-	background:white;
+	 /*box-shadow: 0 0 1px black, inset 0px 0px 5px black, 0 0 50px 50px cyan ; */
+	background: white;
 	text-align:center;
 }
 a img 
@@ -96,9 +97,9 @@ a
 	transform: scale(1.1) rotate(45deg) ;
 	overflow:hidden;
 	position:relative;
-	box-shadow: 0 0 15px gray;
-	border:solid white;
-	background:white;
+	box-shadow: 0 0 50px cyan; 
+	border:solid white; 
+	 background:white; 
 	transition:0.5s;
 	z-index:1;
 	height:120px;
@@ -106,7 +107,7 @@ a
 }
 a:hover,a:focus 
 {
-	transform: scale(3.07) rotate(0deg) ;
+	transform: scale(2.2) rotate(0deg) ;
 	transform-origin:top center;
 	z-index:5;
 	background:white;
@@ -139,10 +140,24 @@ body
 {
 	display:table-cell;
 	vertical-align:middle;
+	background-image: url("image/hinhdaidien.jpg");
+	background-position: all ;
+	background-repeat: no-repeat;
+}
+.footertext{
+	color: blue;
+	text-align: center;
+	background-color: white;
+	width: 300px;
+	margin-left: 500px;
 }
 /* footer*/
 .addfooter{
-	color:blue;
+	color: blue;
+	text-align: center;
+}
+footer{
+	background-color: white;
 }
 /*for mobilescreen*/
 @media only  screen and (min-width : 786px){
