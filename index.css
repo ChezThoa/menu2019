@@ -147,17 +147,19 @@ body
 .footertext{
 	color: blue;
 	text-align: center;
-	background-color: white;
+	background-color: white; 
 	width: 300px;
 	margin-left: 500px;
+	border-radius: 20px;
 }
 /* footer*/
 .addfooter{
-	color: blue;
+	color:white ;
 	text-align: center;
 }
 footer{
-	background-color: white;
+	background-color: blue;
+	border-radius: 10px;
 }
 /*for mobilescreen*/
 @media only  screen and (min-width : 786px){
