@@ -97,7 +97,7 @@ a
 	transform: scale(1.1) rotate(45deg) ;
 	overflow:hidden;
 	position:relative;
-	box-shadow: 0 0 50px cyan; 
+	box-shadow: 0 0 50px white ; 
 	border:solid white; 
 	 background:white; 
 	transition:0.5s;
