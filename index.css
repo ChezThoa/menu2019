@@ -146,11 +146,11 @@ body
 }
 .footertext{
 	color: blue;
-	text-align: center;
-	background-color: white; 
-	width: 300px;
-	margin-left: 500px;
+	background-color:white;
+	margin-left: 300px;
+	margin-right:300px;
 	border-radius: 20px;
+	text-align: center;
 }
 /* footer*/
 .addfooter{

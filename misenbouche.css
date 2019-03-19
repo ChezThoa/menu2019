@@ -2,32 +2,24 @@
     border : 5px double cyan;
     border-radius:15px;
     margin-left:45px;
+    margin-right:45px;
 }
 .tete{
     margin-top:65px;
     text-align: center;
-    color: fuchsia;
+    color: blue;
     font-size: 65px;
 }
 .sous-tete{
     text-align: center;
-    color: fuchsia;
+    color: blue;
     font-size: 45px;
     margin-bottom: 54px;
 }
 
 /*body menu*/
-article{
-    width:1000px;
-}
-article p{
-    border : 2px black double ;
-    overflow: hidden;
-    color: blue;
-    width:300px;
-}
 section{
-    border : 2px cyan inset;
+    border : 5px cyan double;
     position: relative;
     margin-top: 90px;
     margin-left: 300px;
@@ -222,6 +214,10 @@ p.alignright{
     vertical-align: top;
 }
 /*footer contact*/
+.footertext{
+    color:blue;
+    text-align: center;
+}
 .addfooter{
     color:red;
     text-align: center;
@@ -238,6 +234,7 @@ p.alignright{
     width:1200px;
     height:300px;
     margin-left:50px;
+    margin-right:50px;
     border-radius: 15px;
     background-image: url("image/panora1.jpeg");
     overflow: hidden;
