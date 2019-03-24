@@ -1,0 +1,66 @@
+/* formulaire contact*/
+form{
+    margin-top: 10px;
+    transition: all 4s ease-in-out;
+}
+
+.contactcss{
+    width:600px;
+    border:none;
+    outline:none;
+    background: white;
+    border-bottom: 1px solid gray;
+    color: blue;
+    font-size:22px;
+    margin-bottom: 16px;
+}
+.contact-form{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color:blue;
+}
+input{
+    height:45px;
+}
+form .submit{
+    background: orange;
+    border-color:transparent;
+    height:50px;
+    width:100px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 35px;
+
+}
+form .submit:hover{
+    color:orange;
+    cursor: pointer;
+}
+
+/* l'entête*/
+body{
+    background-image: url("image/logo_hoasen.png"),url("image/sitefond.jpg");
+    background-position: top center, bottom;
+    margin-top: none, 350px;
+    background-repeat: no-repeat, no-repeat;
+}
+.bigente{
+    border : 5px double cyan;
+    border-radius:15px;
+    margin-left:45px;
+    margin-right:45px;
+}
+.tete{
+    margin-top:65px;
+    text-align: center;
+    color: blue;
+    font-size: 65px;
+}
+.sous-tete{
+    text-align: center;
+    color: blue;
+    font-size: 45px;
+    margin-bottom: 54px;
+}
