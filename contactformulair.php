@@ -12,7 +12,7 @@
 
 
 
-    $to ="hla211268@gmail.com, lethoa2004@yahoo.com";
+    $to ="hla211268@gmail.com;
     $headers = "From: $email_from \r\n";
     $headers .= "Reply-To: $visitor_email \r\n";
 
