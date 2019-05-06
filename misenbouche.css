@@ -7,12 +7,12 @@
 .tete{
     margin-top:65px;
     text-align: center;
-    color: blue;
+    color: rgb(7, 250, 27);
     font-size: 65px;
 }
 .sous-tete{
     text-align: center;
-    color: blue;
+    color:rgb(7, 250, 27);
     font-size: 45px;
     margin-bottom: 54px;
 }
@@ -240,19 +240,19 @@ p.alignright{
     overflow: hidden;
 
     -webkit-animation-name: panorama;
-    -webkit-animation-duration: 20s;
+    -webkit-animation-duration: 50s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
 
     -moz-animation-name: panorama;
-    -moz-animation-duration: 20s;
+    -moz-animation-duration: 50s;
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
     -moz-animation-direction: alternate;
 
     animation-name: panorama;
-    animation-duration: 20s;
+    animation-duration: 50s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
