@@ -1,0 +1,2563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0027)https://developer.pixlr.com/ -->
+<html id="htmlX" xmlns="https://www.w3.org/1999/xhtml" xml:lang="en"><head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Description" content="PDFzorro - edit your PDF files online - for free">
+<meta name="Keywords" content="how to edit pdf files, edit pdf files, pdf text editor, document forgery, criminal lawyer">
+<!--meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /-->
+
+<link rel="canonical" href="https://www.pdfzorro.com" />
+
+
+
+<title>PDFzorro - edit pdf-files online</title>
+	<link rel="stylesheet" type="text/css" href="tooltip.css" media="screen">
+	<link rel="shortcut icon" href="icon.ico" />
+<link rel="icon" type="image/png" href="icon.png" />
+</head>
+<body link="#565658" top="0" vlink="#565658" alink="#565658" text="#565658"  style="text-align: center; font-size:12px; font-family:Arial;">
+
+<link rel="Stylesheet" type="text/css" href="wPaint/src/wPaint.css" />
+
+<link rel="Stylesheet" type="text/css" href="styles_thomas.css" />
+ 
+
+
+
+ <script>
+ console.log('array_walk wird genutzt!');
+ </script>
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49608690-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<!--  diese DIV nur, um beim scrollen wPaint auch ganz oben noch zu ueberdecken   -->
+<div style='z-index:900;position:fixed; width:100% ; height:6px; top:0px; left:0px; background:#FFFFFF;'>
+</div>
+
+<div style='z-index:10000;position:fixed; width:100% ; height:18px; top:6px; left:0px; background:#FFFFFF;'>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- textlink 700px breit überall -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:15px"
+     data-ad-client="ca-pub-3993292205875193"
+     data-ad-slot="2314517066"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+<!--  diese DIV nur, um beim scrollen wPaint auch ganz oben noch zu ueberdecken   -->
+<div style='z-index:700;position:fixed; width:100% ; height:4px; top:24px; left:0px; background:#FFFFFF;'>
+</div>
+
+
+
+
+<script>
+/*
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49608690-1', 'auto');
+  ga('send', 'pageview');
+  */
+
+</script>
+<meta http-equiv="Content-Type" content="text/html">
+
+
+
+<script src="jquery/1.8.0/jquery.min.js"></script>
+<script src="jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery/latest/jquery-latest.js"></script>
+<script src="jquery/1.3.1/jquery.min.js"></script>
+
+
+<!--script src="jquery.filestyle.js" type="text/javascript" charset="utf-8"></script-->
+<!-- SPIN - Loading  -->
+<script src='https://www.pdfzorro.com/EDIT/spin.js'></script>
+
+<!--   Loading für Editor beim Add Button    -->
+<div id='foo' style='display:none;z-index:999999;position:absolute; top:198px;left:33px;width:70px;height:40px;background-color:#ffffff;'></div> 
+
+<!--   Loading für LogIn Menu open Button    -->
+<div id='foo2' style='display:none;z-index:10020;position:fixed; top:7px;right:90px;width:30px;height:30px;background-color:#ffffff;'></div> 
+
+
+    <script>
+   		
+        var opts = {
+            lines: 10, // The number of lines to draw
+            length: 1, // The length of each line
+            width: 3, // The line thickness
+            radius: 11, // The radius of the inner circle
+            corners: 1, // Corner roundness (0..1)
+            rotate: 0, // The rotation offset
+            color: '#666666', // #rgb or #rrggbb
+            speed: 1, // Rounds per second
+            trail: 60, // Afterglow percentage
+            shadow: false, // Whether to render a shadow
+            hwaccel: false, // Whether to use hardware acceleration
+            className: 'spinner', // The CSS class to assign to the spinner
+            zIndex: 2e9, // The z-index (defaults to 2000000000)
+            top: '18px', // Top position relative to parent in px
+            left: '30px' // Left position relative to parent in px
+        };
+        
+        
+         var opts2 = {
+            lines: 10, // The number of lines to draw
+            length: 1, // The length of each line
+            width: 3, // The line thickness
+            radius: 6, // The radius of the inner circle
+            corners: 1, // Corner roundness (0..1)
+            rotate: 0, // The rotation offset
+            color: '#666666', // #rgb or #rrggbb
+            speed: 1, // Rounds per second
+            trail: 60, // Afterglow percentage
+            shadow: false, // Whether to render a shadow
+            hwaccel: false, // Whether to use hardware acceleration
+            className: 'spinner', // The CSS class to assign to the spinner
+            zIndex: 2e9, // The z-index (defaults to 2000000000)
+            top: '11px', // Top position relative to parent in px
+            left: '16px' // Left position relative to parent in px
+        };
+        
+        
+        var target = document.getElementById('foo');
+        var spinner = new Spinner(opts).spin(target);
+        
+        var target2 = document.getElementById('foo2');
+        var spinner2 = new Spinner(opts2).spin(target2);
+        
+        spinner.stop(target);
+        spinner2.stop(target2);
+        
+        //------------------------------------------
+        //FOO1
+        function loading_start() {
+        document.getElementById('foo').style.display = 'inline';
+        spinner.spin(target);              
+        }
+        
+        function loading_stop() {        
+        document.getElementById('foo').style.display = 'none';
+        spinner.stop(target);                
+        }
+        
+        //------------------------------------------        
+        //FOO2
+        function loading_start2() {
+        document.getElementById('foo2').style.display = 'inline';
+        spinner2.spin(target2);              
+        }
+        
+        function loading_stop2() {        
+        document.getElementById('foo2').style.display = 'none';
+		spinner2.stop(target2);                
+        }
+        
+    </script>
+    
+<!--  ENDE -  SPIN - Loading  --><script>
+
+document.onkeydown = function(event) {
+
+
+
+
+
+// #######################################################	
+//  ENTER - TASTE
+if (event.keyCode == 13) 
+	{
+
+  	console.log('Taste: ENTER');
+  	
+  	//-------------------------------------------------
+  	// Zeilensprung in wPaint
+  	if ( $("#textfeld_eingabe").length) {
+  	
+	  	if ( $("#textfeld_eingabe").attr("style").indexOf("display: none") == -1   ) {
+	
+	  		console.log('Zeilensprung');
+	  		$("#textfeld_eingabe").height( parseInt($("#textfeld_eingabe").height()) + parseInt(zeilenhoehe) );
+	  		
+	  	}
+  	} 
+	  
+	  
+	 //-------------------------------------------------
+  	// Rename bestätigen
+  	if ( $("#rename").length) {
+  	
+	  	if ( $("#rename").attr("style").indexOf("display:none") == -1   ) {
+	
+	  		console.log('Rename OK');
+	  		$( "#rename_name" ).focus();
+	  		rename_file_in_txt();
+	  		
+	  	}
+  	}
+	  
+	  
+	//-------------------------------------------------
+  	// Infobox_Verschlüsseln etc. bestätigen
+  	if ( $("#verschluesseln_infobox").length) {
+  	
+	  	if ( $("#verschluesseln_infobox").attr("style").indexOf("display:none") == -1   ) {
+	
+	  		console.log('Infobox vers.. etc.  OK');
+	  		//hier die jeweilige SAVE function
+	  		
+	  		//DIV-Inhalt auslesen - VERSCHLUESSELN
+	  		if (  $("#verschluesseln_infobox").html().indexOf("click_verschluesseln_save") > 1  ) {
+	  		console.log('Verschluesseln Info save');
+	  		click_verschluesseln_save("155791947777533");
+	  		ausblenden("verschluesseln_infobox");
+	  		}
+	  		
+	  		//DIV-Inhalt auslesen - FILEINFOS
+	  		if (  $("#verschluesseln_infobox").html().indexOf("click_fileinfo_save") > 1  ) {
+	  		console.log('Fileinfo save');
+	  		click_fileinfo_save("155791947777533");	
+	  		ausblenden("verschluesseln_infobox");
+	  		}
+	  		
+	  		//DIV-Inhalt auslesen - EMAIL senden
+	  		if (  $("#verschluesseln_infobox").html().indexOf("click_fileinfo_save") > 1  ) {
+	  		console.log('ENTER macht keine Aktion da ggf. in Textarea');
+	  		}
+	  		
+	  		
+	  		
+	  	}
+  	}
+	  
+	  //
+	  	 //-------------------------------------------------
+  	// Rename bestätigen
+  	if ( $("#go_to_editor_button").length) {
+  	
+	  	if ( $("#go_to_editor_button").attr("style").indexOf("display:none") == -1   ) {
+	
+	  		console.log('Starte PDF Editor über ENTER');
+	  		ausblenden('go_to_editor_button');
+	  		einblenden('loading_editor');
+	  		window.location = 'https://edit.pdfzorro.com/pdf2_HQ.php?upload=';
+
+	  		
+	  	}
+  	}
+	  
+	  
+	  
+	//Ende Taste ENTER	    
+	}
+// #######################################################	
+
+//Ende document.onkeydown
+}
+
+
+
+
+
+
+
+
+
+document.onkeyup = function(event) {
+
+// #######################################################	
+//  ESC - TASTE
+if (event.keyCode == 27) 
+	{
+
+  	console.log('Taste: ESC');
+  	
+  	 //-------------------------------------------------
+  	// Rename abbrechen
+  	if ( $("#rename").length) {
+  	
+	  	if ( $("#rename").attr("style").indexOf("display:none") == -1   ) {
+	
+	  		console.log('Rename abbrechen');
+	  		$( "#rename_name" ).focus();
+	  		ausblenden('rename');
+	  		
+	  	}
+  	}
+  	
+  	//-------------------------------------------------
+  	// Infobox ausblenden
+  	if ( $("#infobox").length) {
+  	
+	  	if ( $("#infobox").attr("style").indexOf("display:none") == -1   ) {
+	
+	  		console.log('Infobox ausblenden');
+	  		ausblenden('infobox');
+	  		
+	  	}
+  	}
+  	
+  	//-------------------------------------------------
+  	// Infobox verschluesseln etc. ausblenden
+  	if ( $("#verschluesseln_infobox").length) {
+  	
+	  	if ( $("#verschluesseln_infobox").attr("style").indexOf("display:none") == -1   ) {
+	
+	  		console.log('Infobox_Vers. etc. ausblenden');
+	  		ausblenden('verschluesseln_infobox');
+	  		
+	  	}
+  	}
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	//Ende Taste ESC	    
+	}
+// #######################################################	
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Ende document.onkeyup
+}
+</script>
+
+
+
+
+<script type="text/javascript">
+
+
+var confirm_loeschen;
+
+function imgReload(imgId) {
+	var path = document.getElementById(imgId).src;
+	if(path.indexOf('?') < 1) path+= '?';
+	path+= Math.round(Math.random()*9).toString();
+	document.getElementById(imgId).src = path;
+}
+
+
+
+function onClickEvent_1(php_datei, a_info, b_info, c_info, d_info, e_info) {
+
+	//------------------------------------
+	//falls delete_more geklickt wurde, eingaben auslesen und an HQ_loeschen.php mitschicken über url
+	if ( a_info == 'delete_more')
+    {
+    a_info = document.getElementById('page_ranges').value;
+    }
+	//------------------------------------
+    
+    //------------------------------------
+	//falls delete_more geklickt wurde, eingaben auslesen und an HQ_loeschen.php mitschicken über url
+	if ( a_info == 'extract_more')
+    {
+    a_info = document.getElementById('page_ranges_extract').value;
+    }
+	//------------------------------------
+   
+    var result = "unbekannt";
+    //var iofield = "iofield";
+ 
+	// phpscript.php aufrufen über POST aufrufen
+	// entspricht: phpscript.php?a=callDoAnything&b=[Inhalt von iofield]
+	result = $.ajax({
+    type: 'POST',
+    async: false,   // WICHTIG!   //achtng, bei &a normal ?a falls bei der url nichts mitgegeben wird
+    url: php_datei + '?a='+a_info + '&b='+b_info + '&c='+c_info + '&d='+d_info + '&e='+e_info,
+    data: ({
+        //a: a_info,
+        //b: b_info,
+        //c: c_info,
+        //d: d_info,
+        //e: e_info
+   		 })
+	}).responseText;
+
+   
+    //Alle Bilder über pdf2_HQ.php neuladen------------------------
+    if (result == "reload_add") {
+    window.reload();
+    }
+    
+    if (result == "reload_clear") {
+    location.reload();
+    }
+    
+    
+     
+    //-----------------------------------------------------------------
+    //geänderten Dateinamen in die DIV eintragen bei rename, XTMMTX wurde vor dem Dateinamen gehängt, damit erkannt wird, dass der Dateiname geändert wurde
+    if (result.indexOf("XTMMTX") > -1)
+    {
+    result = result.replace('XTMMTX', '');
+	document.getElementById("angezeigter_dateiname").innerHTML = "Filename: <b>" + result + "</b>";
+    //-----------------------------------------------------------------    
+    
+    //-----------Rename Download Button ändern!------------------------   
+    //-----------------------------------------------------------------
+    var download_button_innerHTML = "<div id='download_button'><br><a href='pdf/"+a_info+"/"+a_info+".pdf' download='"+result+"'><img src='DOWNLOAD_download.png'  title='Download PDF-File' alt='Download PDF File to your PC' width='200'></a></div>";
+    
+    document.getElementById("download_button").innerHTML = download_button_innerHTML;
+    //------------------------------------------------------------------
+    
+    
+	ausblenden('rename');
+    }
+
+    
+    
+    
+    //-----------------------ENDE----------------------------------
+    
+
+    
+    
+    // BILDER NEULADEN----------------------------------------------
+    //Ergebnis spliten mit dem ":"
+    var mystr = result;
+    var myarr = mystr.split(":");
+	 
+    var i = 0;
+    while(myarr[i]) {
+     //setTimeout('imgReload(myarr[i])', 200);
+     imgReload(myarr[i]);
+     
+    i++;
+	}   
+ 	//--------------------------ENDE---------------------------------
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	//----------------------------------------------------------------
+ 	//hier wird bei Seite -Auf -Ab auch gleich mitgescrolled //464
+ 	if ( php_datei == 'HQ_rauf.php')
+    {
+	    var korrekturscroll = 0;		//bei zwei Werbungen hier 3 statt 999...
+	    if (a_info == 2  || a_info == 999999999999999) {
+	    	korrekturscroll = 76;	
+	    }
+	    document.getElementById('pages').scrollTop -= (386+korrekturscroll);
+	    //Farbe vom Seitennamen kurz rot anzeigen zur visualisierung
+	    $('#seitenname_'+(a_info-1)).css('color', 'red');
+	    setTimeout(function () {$('#seitenname_'+(a_info-1)).css('color', '#565658')}, 1500);
+	    
+    } 	
+    
+    
+    if ( php_datei == 'HQ_runter.php')
+    {
+    	var korrekturscroll = 0;		//bei zwei Werbungen hier 2 statt 999...
+	    if (a_info == 1  || a_info == 999999999999999) {
+	    	korrekturscroll = 76;	
+	    }
+	    document.getElementById('pages').scrollTop += (386+korrekturscroll);
+	    //Farbe vom Seitennamen kurz rot anzeigen zur visualisierung
+	    $('#seitenname_'+(parseInt(a_info)+1)).css('color', 'red');
+	    //alert('#seitenname_'+(a_info-2+1));
+	    setTimeout(function () {$('#seitenname_'+(parseInt(a_info)+1)).css('color', '#565658')}, 1500);
+    
+    }
+ 	//----------------------------------------------------------------
+ 	
+ 	
+    
+    //loading... 1 sek später ausblenden wegen bildladezeiten
+	setTimeout('ausblenden(\'ebene1\')', 500); 
+    
+  
+      
+    //Startseite wieder anzeigen
+    kb_source_2_target('MAIN_start.php');
+        
+
+} 
+
+
+
+function onClickEvent_shrink(php_datei, a_info, b_info, c_info, d_info, e_info) {
+
+
+   
+    var result = "unbekannt";
+    //var iofield = "iofield";
+ 
+	// phpscript.php aufrufen über POST aufrufen
+	// entspricht: phpscript.php?a=callDoAnything&b=[Inhalt von iofield]
+	result = $.ajax({
+    type: 'POST',
+    async: false,   // WICHTIG!   //achtng, bei &a normal ?a falls bei der url nichts mitgegeben wird
+    url: php_datei + '?a='+a_info + '&b='+b_info + '&c='+c_info + '&d='+d_info + '&e='+e_info,
+    data: ({
+        //a: a_info,
+        //b: b_info,
+        //c: c_info,
+        //d: d_info,
+        //e: e_info
+   		 })
+	}).responseText;
+
+
+    
+    if (result == "reload_clear") {
+    location.reload();
+    }
+  
+    location.reload();
+
+
+} 
+
+
+
+</script>
+
+
+
+
+
+
+<script>
+	//hier wird ueber jquery MAIN-Seite (z.b. dev.php)  geladen
+	function kb_source_2_target(php_seite, a_info, b_info, c_info, d_info, e_info) {
+    	
+    	einblenden('ebene1');
+      
+        
+        
+        
+    
+    //zuerst die output png für wPaint erstellen lassen, da dies in dev wegen fehlendem php anhaengsel nimmer klappt ueber div
+            var result = "unbekannt";
+    		//var iofield = "iofield";
+ 
+			// phpscript.php aufrufen über POST aufrufen
+			// entspricht: phpscript.php?a=callDoAnything&b=[Inhalt von iofield]
+			result = $.ajax({
+    		type: 'POST',
+    		async: false,   // WICHTIG!   
+    		url: 'output_erstellen.php' + '?a='+a_info + '&b='+b_info + '&c='+c_info + '&d='+d_info + '&e='+e_info,
+    		data: ({
+       		  //a: a_info,
+       		  //b: b_info,
+      		  //c: c_info,
+      		  //d: d_info,
+      		  //e: e_info
+   		 		})
+			}).responseText;
+      // Ende output png erstellen
+      
+      
+      //Width vom Browserfenster an php Datei uebergeben, welche in MAIN geladen wird...
+      if( php_seite.search('\\?') > 1 )
+      {
+      php_seite =  php_seite + '&widthbrowser=' + window.innerWidth + '&heightbrowser=' + window.innerHeight;
+      
+      } else   {   
+      //hier nur, falls noch kein anhaengels an der php datei haengt... 
+      php_seite =  php_seite + '?widthbrowser=' + window.innerWidth + '&heightbrowser=' + window.innerHeight;
+      } 
+      
+
+    
+		$.get(php_seite, function(data) {
+			$('#target').html(data);	
+		})
+        
+         if ( d_info != 'NO_AUSBLENDEN') {
+           setTimeout('ausblenden(\'ebene1\')', 500);  
+           }
+            
+	}
+    
+
+</script>
+
+
+
+<script>
+function delete_anweisungen(upload) {
+
+ 				var result_delete = 'unbekannt';
+				result_delete = $.ajax({
+    			type: 'POST',
+    			async: false,   // WICHTIG!   
+    			url: 'pdf_aneisungen_proof_exist.php?anweisungen=delete&upload=' + upload,
+    			data: ({
+   		 			})
+				}).responseText;
+}
+</script>
+
+
+
+
+
+
+<script>
+function finish(upload) {
+
+            var result_finish = 'unbekannt';
+			result_finish = $.ajax({
+    		type: 'POST',
+    		async: false,   // WICHTIG!   
+    		url: 'pdf_aneisungen_proof_exist.php?upload=' + upload,
+    		data: ({
+   		 		})
+			}).responseText;
+if ( result_finish == 'warnung_not_saved')
+{           
+	Check = confirm('Do you really want to finish without saving your edit?'); 
+	if(Check == true)
+    {
+    ausblenden('pages'); ausblenden('menu'); 
+	setTimeout('kb_source_2_target(\'pdf3_new_HQ_PRELOAD.php?upload='+upload+'\')', 10);  
+	setTimeout('kb_source_2_target(\'pdf3_new_HQ.php?upload='+upload+'\')', 10);   
+	setTimeout('pdf_verschluesseln(\''+upload+'\')', 2000); setTimeout('einblenden(\'download_menu\')', 1200); 
+    setTimeout('ausblenden(\'ebene1\')', 2100);   
+    //hier noch die PDF anweisungen löschen
+    					            var result_finish = 'unbekannt';
+									result_finish = $.ajax({
+    								type: 'POST',
+    								async: false,   // WICHTIG!   
+    								url: 'pdf_aneisungen_proof_exist.php?anweisungen=delete&upload=' + upload,
+    								data: ({
+   		 								})
+									}).responseText;
+    
+    } else {
+    //Hilfe für Save - Button einblenden
+    info_save('<- click here to save your edit!');
+    }
+    
+} else {
+
+//Nur wenn keine PDF anweisung mehr existieren
+ausblenden('pages'); ausblenden('menu'); 
+//setTimeout('kb_source_2_target(\'pdf3_new_HQ_PRELOAD.php?upload='+upload+'\')', 10);  
+setTimeout('kb_source_2_target(\'pdf3_new_HQ.php?upload='+upload+'\')', 10);   
+setTimeout('pdf_verschluesseln(\''+upload+'\')', 2000); setTimeout('einblenden_no_loading(\'download_menu\')', 1200);
+
+setTimeout('ausblenden(\'ebene1\')', 2100);
+
+
+}
+
+//Ende Funktion
+}
+
+</script>
+
+
+
+<script>
+    
+	function abfrage_compress(upload, filesize_old) {
+	Check = confirm("Do you really want to reduce filesize of your PDF document? The high quality get also lost!"); 
+	if(Check == true)
+    {
+    
+     var result = "unbekannt";
+    	//var iofield = "iofield";
+ 
+		// phpscript.php aufrufen über POST aufrufen
+		// entspricht: phpscript.php?a=callDoAnything&b=[Inhalt von iofield]
+		result = $.ajax({
+    	type: 'POST',
+    	async: false,   // WICHTIG!   //achtng, bei &a normal ?a falls bei der url nichts mitgegeben wird
+    	url: 'compress_pdf.php' + '?upload='+upload,
+    	data: ({
+        	//a: a_info,
+        	//b: b_info,
+        	//c: c_info,
+        	//d: d_info,
+        	//e: e_info
+   			 })
+		}).responseText;
+        //Filesize wird zurückgegeben format ca. 1.23 MB
+    
+    
+    
+    //Info einblnden, um wieviel Dateigroeße reduziert wurde
+    var result_text = "Filesize is reduced from "+filesize_old+" to <b>"+result+"</b>.";
+    info(result_text);
+    
+    //Filesize bei Filesize Button noch ändern über javascript on the fly
+    var inhalt_div_filesize = document.getElementById("filesize_button").innerHTML;
+    
+    //muss zweimal replace gemacht werden, da es im div inhalt auch zweimal vorkommt
+    inhalt_div_filesize = inhalt_div_filesize.replace(filesize_old, result);
+    inhalt_div_filesize = inhalt_div_filesize.replace(filesize_old, result);
+
+	document.getElementById("filesize_button").innerHTML = inhalt_div_filesize;
+    
+    //symbol noch transparent machen, da ja jetzt schon einmal kompriert
+    ausblenden('nicht_compressed');
+    einblenden('schon_compressed');
+    }
+	ausblenden('ebene1');
+	}
+</script>
+
+
+
+<script>
+
+function info(text) {
+    document.getElementById("infobox_inhalt").innerHTML = text;
+    einblenden_no_loading('infobox');
+	}
+    
+function info_save(text) {
+    document.getElementById("info_save_inhalt").innerHTML = text;
+    einblenden('info_save');
+    setTimeout('ausblenden(\'info_save\')', 4000);  
+    
+	}
+	
+function info_save_BARRIERE(text) {
+    document.getElementById("info_save_inhalt").innerHTML = text;
+    document.getElementById('info_save').style.display = "block";
+    setTimeout('ausblenden(\'info_save\')', 4000);  
+    
+	}
+
+</script>
+
+
+
+
+<script language="JavaScript" type="text/javascript">
+
+<!--
+function einblenden(div) {
+with(document.getElementById(div).style){
+display="inline";
+}
+loading_start();
+}
+//-->
+
+<!--
+function einblenden_no_loading(div) {
+with(document.getElementById(div).style){
+display="inline";
+}
+}
+//-->
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function einblenden_no_inline(div) {
+with(document.getElementById(div).style){
+display="";
+}
+}
+//-->
+</script>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function ausblenden(div) {
+with(document.getElementById(div).style){
+display="none";
+}
+loading_stop();
+}
+//-->
+</script>
+
+
+
+<!--///////////////////////MUSTER/////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<div align="center" id="leerleer" style="display:none; background-color: 
+#333333; position:fixed; left:795px; top:28px;">
+<font size="5" face="Verdana" color="#FFFFFF">&nbsp;&nbsp; loading... &nbsp;&nbsp;</font>
+<!--br><img src="ladebalken.gif"</img--></div>
+
+<!--////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+
+<!--//////////////////STANDARD loading über FINISH BUTTOM/////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<div align="center" id="ebene1" style="display:none; background-color: 
+#FFFFFF; position:fixed; left:110px; top:200px; width:134px; height:29px; z-index:50000; padding-top:3px; border-width: 2px; border-style: dotted; border-color:#9D1B35;">
+<font size="4" face="Verdana" color="#9D1B35">&nbsp;&nbsp; loading... &nbsp;&nbsp;</font>
+<!--br><img src="ladebalken.gif"</img--></div>
+
+<!--////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+
+
+<!--///////////////////////STANDARD/////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<div align="center" id="ebene1_alt" style="display:none; background-color: 
+#FFFFFF; position:fixed; left:795px; top:28px; z-index:50000; border-width: 2px; border-style: dotted; border-color:#9D1B35;">
+<font size="4" face="Verdana" color="#9D1B35">&nbsp;&nbsp; loading... &nbsp;&nbsp;</font>
+<!--br><img src="ladebalken.gif"</img--></div>
+
+<!--////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////////////////wPaint////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<div align="center"  id="ebene2" style="display:none; background-color: 
+#FFFFFF; position:fixed; left:795px; top:28px; z-index:50000; border-width: 2px; border-style: dotted; border-color:#9D1B35;">
+<font size="4" face="Verdana" color="#9D1B35">&nbsp;&nbsp; saving... &nbsp;&nbsp;</font>
+<!--br><img src="ladebalken.gif"</img--></div>
+
+<!--////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<!--///////////////////////////SAVED////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<div align="center"  id="ebene3" style="display:none; background-color: 
+#FFFFFF; position:fixed; left:860px; top:28px; z-index:50000; border-width: 2px; border-style: dotted; border-color:#00E65B;">
+<font size="4" face="Verdana" color="#00E65B">&nbsp;&nbsp; saved!... &nbsp;&nbsp;</font>
+<!--br><img src="ladebalken.gif"</img--></div>
+
+<!--////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<!--///////////////FILE GETS PRINTED////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<div align="center"  id="gets_printed" style="display:none; background-color: 
+#FFFFFF; position:fixed; left:450px; top:300px; z-index:50000; border-width: 2px; border-style: dotted; border-color:#9D1B35; ">
+<font size="4" face="Verdana" color="#9D1B35">
+<br>&nbsp;&nbsp; Your Edit
+<br>&nbsp;&nbsp;  gets printed on &nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;  the PDF-file... &nbsp;&nbsp;
+<br>&nbsp;
+</font>
+<!--br><img src="ladebalken.gif"</img--></div>
+
+<!--////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<!--///////////////allgemeine InfoBox////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<div align="center"  id="infobox" style="display:none; background-color: 
+#FFFFFF; position:fixed; left:450px; top:200px; z-index:50000; border-width: 2px; border-style: dotted; border-color:#9D1B35; padding:5px; margin-right:50px; ">
+<font size="3" face="Verdana" color="#9D1B35">
+
+<div id="infobox_inhalt" style="position:relative;top:0px;left:0px;">
+Platzhalter
+</div>
+
+</font>
+
+<br><a href="javascript:ausblenden('infobox')">hide this info</a>
+
+</div>
+
+<!--////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////WARUNG Info Save Button////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<div align="center"  id="info_save" style="display:none; background-color: 
+#00e500; position:fixed; left:385px; top:68px; z-index:50000; opacity:0.7; border-width: 2px; border-style: dotted; border-color:#9D1B35; padding:5px; margin-right:50px; ">
+<font size="1" face="Verdana" color="#FFFFFF"><b>
+
+<div id="info_save_inhalt" style="position:relative;top:0px;left:0px;">
+Platzhalter
+</div>
+
+</b></font>
+<br>
+<font size="1">
+<a href="javascript:ausblenden('info_save')">hide this info</a>
+</font>
+
+</div>
+
+<!--////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+
+<!--///////////////Verschluesseln Fenster///////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+<div align="center"  id="verschluesseln_infobox" style="display:none; background-color: 
+#FFFFFF; position:fixed; left:300px; top:25px; z-index:9999999999999999; border-width: 2px; border-style: dotted; border-color:#9D1B35; padding:10px; margin-right:50px; padding:8px; ">
+
+
+
+<br><a href="javascript:ausblenden('infobox')">hide this info</a>
+
+</div>
+
+<!--////////////////////////////////////////////////////////////-->
+<!--////////////////////////////////////////////////////////////-->
+
+
+<script>
+
+function click_verschluesseln(php_datei, a_info, b_info, c_info, d_info, e_info) {
+
+
+   
+    var result = "unbekannt";
+    //var iofield = "iofield";
+ 
+	// phpscript.php aufrufen über POST aufrufen
+	// entspricht: phpscript.php?a=callDoAnything&b=[Inhalt von iofield]
+	result = $.ajax({
+    type: 'POST',
+    async: false,   // WICHTIG!   //achtng, bei &a normal ?a falls bei der url nichts mitgegeben wird
+    url: php_datei + '?a='+a_info + '&b='+b_info + '&c='+c_info + '&d='+d_info + '&e='+e_info,
+    data: ({
+        //a: a_info,
+        //b: b_info,
+        //c: c_info,
+        //d: d_info,
+        //e: e_info
+   		 })
+	}).responseText;
+   
+    document.getElementById('verschluesseln_infobox').innerHTML = result;
+	einblenden_no_loading('verschluesseln_infobox');
+
+} 
+
+</script>
+
+
+
+<script>
+function click_verschluesseln_save(upload)
+{
+
+var check0 = document.getElementsByName('verschluesselungsauswahlen')[0].checked;
+var check1 = document.getElementsByName('verschluesselungsauswahlen')[1].checked;
+var check2 = document.getElementsByName('verschluesselungsauswahlen')[2].checked;
+var check3 = document.getElementsByName('verschluesselungsauswahlen')[3].checked;
+var check4 = document.getElementsByName('verschluesselungsauswahlen')[4].checked;
+var check5 = document.getElementsByName('verschluesselungsauswahlen')[5].checked;
+var check6 = document.getElementsByName('verschluesselungsauswahlen')[6].checked;
+var check7 = document.getElementsByName('verschluesselungsauswahlen')[7].checked;
+var check8 = document.getElementsByName('verschluesselungsauswahlen')[8].checked;
+
+
+    var result_save = "unbekannt";
+
+	result_save = $.ajax({
+    type: 'POST',
+    async: false,  
+    url:  'verschluesseln_schreiben.php' + '?0='+check0 + '&1='+check1 + '&2='+check2 + '&3='+check3 + '&4='+check4 + '&5='+check5 + '&6='+check6 + '&7='+check7 + '&8='+check8 + '&upload='+upload,
+    data: ({
+
+   		 })
+	}).responseText;
+
+
+}
+</script>
+
+
+
+<script>
+
+function pdf_verschluesseln(upload) {
+
+
+
+	var result = "unbekannt";
+
+	result = $.ajax({
+    type: 'POST',
+    async: false,   // WICHTIG!   //achtng, bei &a normal ?a falls bei der url nichts mitgegeben wird
+    url: 'HQ_verschluesseln.php' + '?upload='+upload,
+    data: ({
+        //a: a_info,
+        //e: e_info
+   		 })
+	}).responseText;
+    
+    console.log('pdf wird verschluesselt: '+result);
+    
+    //zurück button bei finish download page ausblenden, da bei verschluesselung keine aenderungen mehr möglich sind!!
+    if (result == 'verschluesselt_true')
+    {
+	document.getElementById('zurueck_button_bei_finish').innerHTML = '';
+    }
+    
+    //alert(result);
+
+} 
+
+</script>
+
+
+
+
+<script>
+function click_fileinfo_save(upload)
+{
+
+var check0 = document.getElementById('pdfcreator').value;
+var check1 = document.getElementById('author').value;
+var check2 = document.getElementById('title').value;
+var check3 = document.getElementById('subject').value;
+var check4 = document.getElementById('keywords').value;
+
+
+
+    var result_save = "unbekannt";
+
+	result_save = $.ajax({
+    type: 'POST',
+    async: false,  
+    url:  'fileinfo_schreiben.php' + '?0='+check0 + '&1='+check1 + '&2='+check2 + '&3='+check3 + '&4='+check4 + '&upload='+upload,
+    data: ({
+
+   		 })
+	}).responseText;
+
+
+}
+</script>
+
+
+
+<script>
+function click_email_send(upload)
+{
+	
+	//Ziffern für Sicherheitsabfrage
+	var zifferA = Math.floor((Math.random() * 10) + 1);
+	var zifferB = Math.floor((Math.random() * 10) + 1);
+	var ErgebnisAplusB = zifferA + zifferB;
+	
+	
+	
+var Check = prompt('Safety query: '+zifferA+' + '+zifferB+' = ', '');
+if (parseInt(Check) != ErgebnisAplusB) {
+	
+  alert('False input. Calculate and try again!');
+  
+} else {
+
+	
+	var check0 = document.getElementById('replyto').value;
+	var check1 = document.getElementById('reciever').value;
+	var check3 = document.getElementById('sender').value;
+	var userpassword_checked = document.getElementsByName('userpassword_check')[0].checked;
+	
+	var abbrechen = 'nein';
+	//Prüfen ob auch Emailadressen eingegeben wurden
+	
+	if ( check0.indexOf('@') < 2 )  //replyto prüfe @ zeichen
+	{
+	
+	abbrechen = 'ja';
+	}
+	
+	if ( check1.indexOf('@') < 2 )  //reciever
+	{
+	abbrechen = 'ja';
+	}
+	
+	if ( check0.indexOf('.') < 0 )  //replyto prüfe .com z.b
+	{
+	abbrechen = 'ja';
+	}
+	
+	if ( check1.indexOf('.') < 0 )  //reciever
+	{
+	abbrechen = 'ja';
+	}
+	
+	
+	if ( abbrechen == 'ja' )
+	{
+	
+	ausblenden('ebene1');
+	alert('ERROR: Input a valid email adress in ReplyTo and Reciever.');
+	
+	
+	} else {
+	//wenn nicht abgebrochen werden muss
+		
+	//-- BODY auslesen-------------------------------------------------------------------
+	var check2 = document.getElementById('body').value;  //ggf. name probieren statt id
+	
+	//console.log(check2);
+	
+	/*
+	check2 = check2.replace(/ü/g, "ue");
+	check2 = check2.replace(/Ü/g, "Ue");
+	
+	check2 = check2.replace(/Ä/g, "Ae");
+	check2 = check2.replace(/ä/g, "ae");
+	
+	check2 = check2.replace(/Ö/g, "Oe");
+	check2 = check2.replace(/ö/g, "oe");
+	
+	check2 = check2.replace(/ß/g, "ss");
+	*/
+	check2 = check2.replace(/\n/g, 'XmXmX');
+	
+		check2 = btoa(check2);   //base64 encoden wegen url übergabe
+	    
+	//-- SUBJECT auslesen-------------------------------------------------------------------    
+	var check4 = document.getElementById('subject').value;
+	
+	/*
+	check4 = check4.replace(/ü/g, "ue");
+	check4 = check4.replace(/Ü/g, "Ue");
+	
+	check4 = check4.replace(/Ä/g, "Ae");
+	check4 = check4.replace(/ä/g, "ae");
+	
+	check4 = check4.replace(/Ö/g, "Oe");
+	check4 = check4.replace(/ö/g, "oe");
+	
+	check4 = check4.replace(/ß/g, "ss");
+	*/
+	check4 = check4.replace(/\n/g, 'XmXmX');
+	
+		check4 = btoa(check4);   //base64 encoden wegen url übergabe
+	
+	
+	
+	    var result_save = "unbekannt";
+		result_save = $.ajax({
+	    type: 'POST',
+	    async: false,  
+	    url:  'email.php' + '?0='+check0 + '&1='+check1 + '&2='+check2 + '&3='+check3 + '&4='+check4 + '&userpassword_checked='+userpassword_checked + '&upload='+upload,
+	    data: ({
+	    	
+	    	2: check2,
+	    	4: check4
+	
+	   		 })
+		}).responseText;
+	
+		result_save = result_save.replace(/<br>/g, '\n');
+		alert(result_save);
+	    
+	    if ( result_save.indexOf('ERROR') == -1 )
+		{
+		//nur eingabebox ausblenden wenn keine errormeldung angezeigt wird
+		ausblenden('verschluesseln_infobox');
+		}
+	    ausblenden('ebene1');
+	
+	//info('<b>Your Mail has been sent successfully</b><br><br>Reciever: '+check0+'<br><br>You recieve a copy on '+check0+'.');
+	//Ende wenn nicht abgebrochen werden musste
+	}
+
+//Ende Prompt Sicherheitsabfrage 3+5 z.B.
+}
+
+}
+</script>
+
+
+
+
+
+
+<script>
+    
+	function abfrage_extract(php_datei, a_info, b_info, c_info, d_info, e_info) {
+	Check = confirm("Do you really want extract page "+a_info+" ? All other pages get deleted!"); 
+	if(Check == true)
+    {
+   
+    var result = "unbekannt";
+    //var iofield = "iofield";
+ 
+	// phpscript.php aufrufen über POST aufrufen
+	// entspricht: phpscript.php?a=callDoAnything&b=[Inhalt von iofield]
+	result = $.ajax({
+    type: 'POST',
+    async: false,   // WICHTIG!   //achtng, bei &a normal ?a falls bei der url nichts mitgegeben wird
+    url: php_datei + '?a='+a_info + '&b='+b_info + '&c='+c_info + '&d='+d_info + '&e='+e_info,
+    data: ({
+        //a: a_info,
+        //b: b_info,
+        //c: c_info,
+        //d: d_info,
+        //e: e_info
+   		 })
+	}).responseText;
+
+    
+    //Alle Bilder über pdf2_HQ.php neuladen------------------------
+    if (result == "reload_add") {
+    window.reload();
+    }
+    
+    if (result == "reload_clear") {
+    location.reload();
+    }
+
+  }     
+
+ausblenden('ebene1');
+}
+
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  TOOLTIPS -> FAST bei mouseover
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/***********************************************
+* Cool DHTML tooltip script II- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at https://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var offsetfromcursorX=12 //Customize x offset of tooltip
+var offsetfromcursorY=10 //Customize y offset of tooltip
+
+var offsetdivfrompointerX=10 //Customize x offset of tooltip DIV relative to pointer image
+var offsetdivfrompointerY=14 //Customize y offset of tooltip DIV relative to pointer image. Tip: Set it to (height_of_pointer_image-1).
+
+document.write('<div id="dhtmltooltip"></div>') //write out tooltip DIV
+document.write('<img id="dhtmlpointer" src="arrow2.gif">') //write out pointer image
+
+var ie=document.all
+var ns6=document.getElementById && !document.all
+var enabletip=false
+if (ie||ns6)
+var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""
+
+var pointerobj=document.all? document.all["dhtmlpointer"] : document.getElementById? document.getElementById("dhtmlpointer") : ""
+
+function ietruebody(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function ddrivetip(thetext, thewidth, thecolor){
+if (ns6||ie){
+if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"
+if (typeof thecolor!="undefined" && thecolor!="") tipobj.style.backgroundColor=thecolor
+tipobj.innerHTML=thetext
+enabletip=true
+return false
+}
+}
+
+function positiontip(e){
+if (enabletip){
+var nondefaultpos=false
+var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;
+var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;
+//Find out how close the mouse is to the corner of the window
+var winwidth=ie&&!window.opera? ietruebody().clientWidth : window.innerWidth-20
+var winheight=ie&&!window.opera? ietruebody().clientHeight : window.innerHeight-20
+
+var rightedge=ie&&!window.opera? winwidth-event.clientX-offsetfromcursorX : winwidth-e.clientX-offsetfromcursorX
+var bottomedge=ie&&!window.opera? winheight-event.clientY-offsetfromcursorY : winheight-e.clientY-offsetfromcursorY
+
+var leftedge=(offsetfromcursorX<0)? offsetfromcursorX*(-1) : -1000
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<tipobj.offsetWidth){
+//move the horizontal position of the menu to the left by it's width
+tipobj.style.left=curX-tipobj.offsetWidth+"px"
+nondefaultpos=true
+}
+else if (curX<leftedge)
+tipobj.style.left="5px"
+else{
+//position the horizontal position of the menu where the mouse is positioned
+tipobj.style.left=curX+offsetfromcursorX-offsetdivfrompointerX+"px"
+pointerobj.style.left=curX+offsetfromcursorX+"px"
+}
+
+//same concept with the vertical position
+if (bottomedge<tipobj.offsetHeight){
+tipobj.style.top=curY-tipobj.offsetHeight-offsetfromcursorY+"px"
+nondefaultpos=true
+}
+else{
+tipobj.style.top=curY+offsetfromcursorY+offsetdivfrompointerY+"px"
+pointerobj.style.top=curY+offsetfromcursorY+"px"
+}
+tipobj.style.visibility="visible"
+if (!nondefaultpos)
+pointerobj.style.visibility="visible"
+else
+pointerobj.style.visibility="hidden"
+}
+}
+
+function hideddrivetip(){
+if (ns6||ie){
+enabletip=false
+tipobj.style.visibility="hidden"
+pointerobj.style.visibility="hidden"
+tipobj.style.left="-1000px"
+tipobj.style.backgroundColor=''
+tipobj.style.width=''
+}
+}
+
+document.onmousemove=positiontip
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+</script>
+
+
+
+
+<script>
+function confirm_delete(php_datei, a_info, b_info, c_info, d_info, e_info) {
+
+var abfrage = confirm('Do you really want delete the PDF from server now. After this, your are not able to download this file anymore.')
+if (abfrage == true)
+
+
+{
+   
+    var result = "unbekannt";
+
+	result = $.ajax({
+    type: 'POST',
+    async: false,   // WICHTIG!   //achtng, bei &a normal ?a falls bei der url nichts mitgegeben wird
+    url: php_datei + '?a='+a_info + '&b='+b_info + '&c='+c_info + '&d='+d_info + '&e='+e_info,
+    data: ({
+        //a: a_info,
+        //e: e_info
+   		 })
+	}).responseText;
+    
+einblenden('menu');
+ausblenden('download_menu');
+
+//Startseite wieder anzeigen
+kb_source_2_target('MAIN_start.php');
+}
+
+
+
+}
+ 
+</script>
+
+
+
+
+<script>
+
+function click_loeschen_more(php_datei, a_info, b_info, c_info, d_info, e_info) {
+
+
+   
+    var result = "unbekannt";
+    //var iofield = "iofield";
+ 
+	// phpscript.php aufrufen über POST aufrufen
+	// entspricht: phpscript.php?a=callDoAnything&b=[Inhalt von iofield]
+	result = $.ajax({
+    type: 'POST',
+    async: false,   // WICHTIG!   //achtng, bei &a normal ?a falls bei der url nichts mitgegeben wird
+    url: php_datei + '?a='+a_info + '&b='+b_info + '&c='+c_info + '&d='+d_info + '&e='+e_info,
+    data: ({
+        //a: a_info,
+        //b: b_info,
+        //c: c_info,
+        //d: d_info,
+        //e: e_info
+   		 })
+	}).responseText;
+   
+   	// hier wird nur die Bauart der DIV von **verschlueeseln_infobox** übernommen,
+    // hat aber nix mit verschluesseln zu tun
+    document.getElementById('verschluesseln_infobox').innerHTML = result;
+	einblenden_no_loading('verschluesseln_infobox');
+
+} 
+
+</script>
+
+
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<link rel="stylesheet" href="https://www.pdfzorro.com/EDIT/LogIn/style_login.css" type="text/css">
+
+<link rel="stylesheet" href="https://www.pdfzorro.com/EDIT/LogIn/style_Main.css" type="text/css">
+
+<script>
+	var uploadLogIn = '155791947777533';
+	var tokenKey = "";
+	//var id_token = "";
+</script>
+
+
+
+
+
+
+<html>
+  <head>
+ 
+    <script type='text/javascript'>
+    
+    var tokenX = '';
+      // Your Client ID can be retrieved from your project in the Google
+      // Developer Console, https://console.developers.google.com
+      var CLIENT_ID = '1038601635763-qs9h3vcpthp1ugqdhgltbb858e2qesso.apps.googleusercontent.com';
+
+      var SCOPES = ['https://www.googleapis.com/auth/userinfo.email'];
+
+      /**
+       * Check if current user has authorized this application.
+       */
+      function checkAuth() {
+      	
+      	
+        gapi.auth.authorize(
+          {
+            'client_id': CLIENT_ID,
+            'scope': SCOPES.join(' '),
+            'response_type': 'token id_token',
+            'immediate': true
+          }, handleAuthResult);
+          
+          
+          
+      }
+
+      /**
+       * Handle response from authorization server.
+       *
+       * @param {Object} authResult Authorization result.
+       */
+      function handleAuthResult(authResult) {
+      	
+        var authorizeDiv = document.getElementById('authorize-div');
+        if (authResult && !authResult.error) {
+          // Hide auth UI, then load client library.
+          authorizeDiv.style.display = 'none';
+          tokenX = authResult.access_token;
+          id_token = authResult.id_token;
+          loadGmailApi();
+        } else {
+          // Show auth UI, allowing the user to initiate authorization by
+          // clicking authorize button.
+          authorizeDiv.style.display = 'inline';
+        }
+      }
+
+      /**
+       * Initiate auth flow in response to user clicking authorize button.
+       *
+       * @param {Event} event Button click event.
+       */
+      function handleAuthClick(event) {
+        gapi.auth.authorize(
+          {client_id: CLIENT_ID, scope: SCOPES, response_type: 'token id_token', immediate: false},
+          handleAuthResult);
+        return false;
+      }
+      
+      
+
+      /**
+       * Load Gmail API client library. List labels once client library
+       * is loaded.
+       */
+      function loadGmailApi() {
+               
+        console.log('Bei Google eingeloggt');
+        //---------------------------------------------------------
+        //---------------------------------------------------------
+        
+          /// NUR EMAIL
+        gapi.client.load('oauth2', 'v2', function() {
+        	
+
+        	
+            gapi.client.oauth2.userinfo.get().execute(function(resp) {
+
+              // Shows user email
+              console.log(resp.email);
+              console.log(resp.name);
+              console.log(resp.id);
+              //console.log("Token: "+resp.id_token);
+             //console.log(resp);
+             
+              
+              uploadUserId = resp.id;
+              emailUser = resp.email;
+              nameUser = resp.name;
+              if (nameUser == "") { 
+              	nameUser = "User";
+              }
+
+              
+              ///////////////////////////////////////////////////////////////////////
+              //Hier Aktionen durchführen sobald man bei Google eingeloggt war.
+              
+
+                
+                //Hier wird man wieder ausgeloogt
+                
+                  //Hier Ausloggen anzeigen
+					  
+				/*	  $('#login_div').css('display', 'none');
+					  $('#welcome_text').css('display', 'none');   */
+					  
+						//----
+						if ( resp.id != "" ) {
+							console.log('getsession wird ausgeführt');
+					    var result = "unbekannt";
+						result = $.ajax({
+					    type: 'POST',
+					    async: false,   // WICHTIG! 
+					    url: DomainName+'LogIn/getsession.php',
+					    data: ({
+					        uploadUserId: uploadUserId,
+					        emailUser: emailUser,
+					        nameUser: nameUser,
+					        id_token: id_token,
+					        info: 'platzhalter'
+					
+					   		 })
+						}).responseText;
+						
+						
+						console.log('Return von getsession: ' + result);
+						
+						//Falls soeben NEU eingeloggt, dann die komplette Seite neuladen
+						if ( result.length == 100){   //hier wenn eingeloggt
+							$('#LogInMenu').css('display', 'inline');
+							
+							//token zurückgeben um an Links anzuhängen
+							tokenKey = result;
+							
+
+							setTimeout(function(){      google_ausloggen('https://accounts.google.com/o/oauth2/revoke?token='  + tokenX);       }, 200);
+							
+							
+						}   
+						
+						
+						
+						}
+                
+              ///////////////////////////////////////////////////////////////////////
+              ///////////////////////////////////////////////////////////////////////
+             
+            })
+          });    
+          
+		}
+
+
+
+
+
+
+
+      /**
+       * Append a pre element to the body containing the given message
+       * as its text node.
+       *
+       * @param {string} message Text to be placed in pre element.
+       */
+       
+      function appendPre(message) {
+        var pre = document.getElementById('output');
+        var textContent = document.createTextNode(message + '\n');
+        pre.appendChild(textContent);
+      }
+      
+      
+      
+              
+     //hier wird man gleich nach login bei google wieder ausgeloggt! Damit automatisch anmelden nicht passiert...
+	function google_ausloggen(php_seite) {
+   
+   		//Nur Google ausloggen!
+     document.getElementById('delete_session').src = php_seite;
+  
+                           
+	} 
+
+      
+      
+
+    </script>
+    
+
+  
+  
+    <script src='https://apis.google.com/js/client.js?onload=checkAuth'></script>
+    
+    
+  </head>
+  <body>
+  
+  <iframe name='delete_session' id='delete_session' src='' style='border-width:0px;z-index:99999999999;display:none;position:absolute;top:1px;left:1px;width:100px;height:100px;'></iframe>
+
+  
+
+  </body>
+</html>
+<!--###     Einloggen       ####-->
+<div id="signInButton" style='position:fixed;top:0px;right:0px;z-index:10002'>
+	
+		<div id='authorize-div' >
+	    <span id='authorize-button' onclick='handleAuthClick(event)'><span class="sign_in">Sign in</span></span>
+	    </div>
+	    <pre id='output'></pre>
+	
+</div>
+
+
+
+
+<!--###     LogedInMenu + SignOutButton       ####-->
+<div id="LogInMenu" style='display:none;position:fixed;top:8px;right:5px;z-index:10002'>
+
+
+<img height="25" class="menu_button" id="menu_button" src="https://www.pdfzorro.com/EDIT/LogInImages/Menu.png" onclick="toggleDiv('LogInMain');" alt="login button for pdf cloud">
+
+<span class="sign_out" onclick="signOut();">Sign out</span>
+
+</div>
+
+
+
+
+<!--###     Main - LogIn       ####-->
+<div class="LogInMainClass" id="LogInMain">
+
+
+
+</div>
+
+
+
+<script>
+//		## Show Main LoggedMenu
+	function showDiv(divId){
+	$('#'+divId).css("display", "block"); 
+	}
+	
+//		## Hide Main LoggedMenu
+	function hideDiv(divId){
+	$('#'+divId).css("display", "none"); 
+	}
+	
+//		## Toggle Show/Hide Main LoggedMenu
+	function toggleDiv(divId){
+		
+		if (   $('#'+divId).css('display')  == "none"  ) {
+			
+			$('#'+divId).css("display", "block");
+			$("#menu_button").attr("src","https://www.pdfzorro.com/EDIT/LogInImages/MenuClose.png");
+			//LogIn-Main-Inhalt auslesen un anzeigen
+			getLogInMain();
+			
+			
+		} else {
+			
+			$('#'+divId).css("display", "none"); 
+			$("#menu_button").attr("src","https://www.pdfzorro.com/EDIT/LogInImages/Menu.png");
+		}
+	}
+	
+	
+</script>
+
+
+
+
+
+
+
+
+<script>
+//#######################################
+
+var uploadUserId;
+/*
+var DomainName = 'https://edit.pdfzorro.com/';
+if (  window.location['hostname'].indexOf('edit.pdfzorro.com')  == -1  ) {
+	DomainName = 'https://www.pdfzorro.com/EDIT/';
+*/	
+	var DomainName = '';
+if (  window.location['hostname'].indexOf('edit.pdfzorro.com')  == -1  ) {
+	DomainName = 'EDIT/';
+	
+}
+	
+//#######################################	
+</script>
+
+
+<script>
+	function getLogInMain(){
+	//Hier werden die LoginDaten ausgelesen	
+	loading_start2();
+	
+		function temp(){
+						    var result = "unbekannt";
+						result = $.ajax({
+					    type: 'POST',
+					    async: false,   // WICHTIG! 
+					    url: DomainName+'LogIn/getLogInMain.php',
+					    data: ({
+					        uploadUserId: uploadUserId,
+					        uploadLogIn: uploadLogIn,
+					        aktuelleURL: window.location['hostname'],
+					        info: 'platzhalter'
+					
+					   		 })
+						}).responseText;
+						
+						
+						if (result == "LogOut") {
+							
+							signOut();	
+							
+						} else {
+						
+							//console.log('Return von getLogInMain: ' + result);
+							$("#LogInMain").html(result);
+							
+							//getFilelist abrufen
+							getFilelist();
+						
+						}
+						
+		//Ende Funktion temp				
+		}
+		setTimeout(temp,100);
+		
+	//Ende Funktion	
+	}
+</script>
+
+
+
+
+<script>
+	function savePDF_LogIn(){
+	//Hier wird die PDF in die Cloud zurückgespeichert, falls bereits geöffnet
+	
+	//loading
+	$("#statusSave").text('please wait...');
+	loading_start2();
+
+	function temp(){
+			
+		var result = "unbekannt";
+		result = $.ajax({
+	    type: 'POST',
+	    async: false,   // WICHTIG! 
+	    url: DomainName+'LogIn/getMoveFile.php',
+	    data: ({
+	        uploadUserId: uploadUserId,
+	        uploadLogIn: uploadLogIn,
+	        saveModus: 'save',
+	        aktuelleURL: window.location['hostname'],
+	        info: 'platzhalter'
+	
+	   		 })
+		}).responseText;
+		
+		//Hier die Dateiliste aktualisieren
+		getFilelist();
+		
+		console.log('Return von getMoveFile: ' + result);
+		
+		if (   result.indexOf('Error') != -1 ) {
+		$("#statusSave").html('<font color="#e50000">'+result+'</font>');	//Error, Datei zu groß für Cloud, max. allowd z.B. 10MB
+		} else {
+		$("#statusSave").html('<font color="#00CC00">saved successfully!</font>');
+		}
+		
+		loading_stop2();
+		setTimeout(clearStatus,10000);
+	
+		//Ende temp Funktion
+		}
+		setTimeout(temp,100);
+	//Ende Funktion	
+	}
+</script>
+
+
+
+
+<script>
+	function saveToPDF_LogIn(){
+	//Hier wird die PDF neu, bzw. als Kopie in der Cloud gespeichert
+	
+	//loading
+	$("#statusSave").text('please wait...');
+	loading_start2();
+	
+	function temp(){
+	
+			    var result = "unbekannt";
+		result = $.ajax({
+	    type: 'POST',
+	    async: false,   // WICHTIG! 
+	    url: DomainName+'LogIn/getMoveFile.php',
+	    data: ({
+	        uploadUserId: uploadUserId,
+	        uploadLogIn: uploadLogIn,
+	        saveModus: 'saveTo',
+	        aktuelleURL: window.location['hostname'],
+	        info: 'platzhalter'
+	
+	   		 })
+		}).responseText;
+		
+		//Hier die Dateiliste aktualisieren
+		getFilelist();
+		
+		console.log('Return von getMoveFile: ' + result);
+		
+		if (   result.indexOf('Error') != -1 ) {
+		$("#statusSave").html('<font color="#e50000">'+result+'</font>');	//Error, Datei zu groß für Cloud, max. allowd z.B. 10MB
+		} else {
+		$("#statusSave").html('<font color="#00CC00">saved successfully!</font>');
+		}
+		
+		loading_stop2();
+		setTimeout(clearStatus,10000);
+		
+		//Ende temp Funktion
+		}
+		setTimeout(temp,100);
+	//Ende Funktion	
+		
+	}
+</script>
+
+
+
+
+<script>
+	function getDownloadFile(){
+		
+		
+		
+	//$('#delete_session').attr('src', "https://edit.pdfzorro.com/LogIn/test.php");
+
+
+
+
+	//Ende Funktion	
+	}
+</script>
+
+
+
+<script>
+	function clearStatus(){
+		
+	//Status Meldung leeren	
+	$("#statusSave").html('');
+	loading_stop2();
+		
+	}
+</script>
+
+
+
+
+
+<script>
+	function deleteFileLogIn(uploadLogIn){
+		
+		//Sicherheitsabfrage
+		if (   confirm("Do you really want to remove this file?")  )  {
+
+	
+			//Hier wird die PDF neu, bzw. als Kopie in der Cloud gespeichert
+			
+			//loading
+			$("#statusSave").text('please wait...');
+			loading_start2();
+			
+			function temp(){
+			
+					    var result = "unbekannt";
+				result = $.ajax({
+			    type: 'POST',
+			    async: false,   // WICHTIG! 
+			    url: DomainName+'LogIn/getDeleteFile.php',
+			    data: ({
+			        uploadUserId: uploadUserId,
+			        uploadLogIn: uploadLogIn,
+			        aktuelleURL: window.location['hostname'],
+			        info: 'platzhalter'
+			
+			   		 })
+				}).responseText;
+				
+				//Hier die Dateiliste aktualisieren
+				getFilelist();
+				
+				console.log('Return von getDeleteFile: ' + result);
+				
+				$("#statusSave").html('<font color="#00CC00">File deleted!</font>');
+				loading_stop2();
+				setTimeout(clearStatus,3000);
+				
+				//Ende temp Funktion
+				}
+		setTimeout(temp,100);
+		
+		//Ende Confirm Abfrage
+		}
+		
+	//Ende Funktion	
+	}
+</script>
+
+
+
+<script>
+	function renameFileLogIn(uploadLogIn, oldTitle){
+		
+		//Sicherheitsabfrage
+		var newTitle = prompt("Please enter new title:", oldTitle); 
+		if (newTitle != null) {
+	
+			//Hier wird die PDF neu, bzw. als Kopie in der Cloud gespeichert
+			
+			
+					    var result = "unbekannt";
+				result = $.ajax({
+			    type: 'POST',
+			    async: false,   // WICHTIG! 
+			    url: DomainName+'LogIn/getRenameFile.php',
+			    data: ({
+			        uploadUserId: uploadUserId,
+			        uploadLogIn: uploadLogIn,
+			        newTitle: newTitle,
+			        aktuelleURL: window.location['hostname'],
+			        info: 'platzhalter'
+			
+			   		 })
+				}).responseText;
+				
+				//Hier die Dateiliste aktualisieren
+				getFilelist();
+				
+				console.log('Return von getDeleteFile: ' + result);
+				
+				$("#statusSave").html('<font color="#00CC00">File renamed!</font>');
+				setTimeout(clearStatus,3000);
+				
+
+		
+		
+		//Ende PROMPT Abfrage
+		}
+		
+	//Ende Funktion	
+	}
+</script>
+
+
+
+
+<script>
+	function savePDF_Error(){
+	//Hier Error Meldung, dass keine PDF geöffnet ist	
+	alert('Please open PDF first with editor. Then you can add PDF to your free cloudspace.');
+		
+	}
+</script>
+
+
+
+<script>
+	function showSettings(){
+		
+	$("#mainText").html('Here you can delete your account.<br>All files get deleted.<br><br><span class="redButton" onclick="deleteAccountLogIn()">Delete account</span><br><br><br>');	
+		
+	//Ende Funktion		
+	}
+</script>
+
+
+<script>
+	function openFileInEditor(SELECTEDuploadLogIn, promtJaNein){
+	//Hier wird die PDF in den PDFeditor rüberkopiert und dann geöffnet	
+	
+	if ( promtJaNein == "ja" ) {
+	
+		//Sicherheitsabfrage
+		if (   confirm("Do you really want to open this file. The currently opened file gets closed!")  )  {
+			//loading
+			$("#statusSave").text('please wait...');
+			setTimeout(temp,100);	
+			}
+		
+	} else {
+		
+		//loading
+		$("#statusSave").text('please wait...');
+		setTimeout(temp,100);
+		
+	}
+			function temp(){
+				
+						    var result = "unbekannt";
+					result = $.ajax({
+				    type: 'POST',
+				    async: false,   // WICHTIG! 
+				    url: DomainName+'LogIn/getOpenFile.php',
+				    data: ({
+				        uploadUserId: userId,
+				        uploadLogIn: SELECTEDuploadLogIn,
+				        aktuelleURL: window.location['hostname'],
+				        info: 'platzhalter'
+				
+				   		 })
+					}).responseText;
+					
+					var upload_und_token_Array = result.split(':');
+					var uploadFromEditor = upload_und_token_Array[0];
+					var tokenKey = upload_und_token_Array[1];
+					var userId = upload_und_token_Array[2];
+					
+					clearStatus();
+					
+					if ( result != 'Du bist nicht eingeloggt!' ) {
+						//hier bei erfolgreichem Kopieren -> Editor öffnen
+			
+						window.location = 'https://edit.pdfzorro.com/pdf2_HQ.php?upload='+uploadFromEditor+'&tokenKey='+tokenKey+'&uploadUserId='+userId;
+						
+					}
+					
+					console.log('Return von openFileInEditor: ' + result);
+					//$("#LogInMain").html(result);
+			
+					//Ende temp Funktion
+					}
+				
+	//Ende Funktion		
+	}
+</script>
+
+
+
+<script>
+	function getFilelist(){
+	//Hier wird die PDF neu, bzw. als Kopie in der Cloud gespeichert	
+	
+			    var result = "unbekannt";
+		result = $.ajax({
+	    type: 'POST',
+	    async: false,   // WICHTIG! 
+	    url: DomainName+'LogIn/getFilelist.php',
+	    data: ({
+	        uploadUserId: uploadUserId,
+	        uploadLogIn: uploadLogIn,
+	        aktuelleURL: window.location['hostname'],
+	        info: 'platzhalter'
+	
+	   		 })
+		}).responseText;
+		
+		
+		//console.log('Return von getFilelist: ' + result);
+		$("#dateiBox").html(result);
+		
+		if( result.indexOf('Terms of Use') > 1   ) {
+			//Hier falls AGBs noch nicht akzeptiert wurden, SAVE Buttons ausblenden
+			$('#parentSaveDiv').css('display', 'none');
+		} else {
+			$('#parentSaveDiv').css('display', 'block');
+		}
+
+
+	loading_stop2();	
+	}
+</script>
+
+
+
+
+
+<script>
+  function acceptAGB(AGBsText) {
+
+
+     	
+     if (AGBsText == "ja") {
+     		
+     	var result = "unbekannt";
+		result = $.ajax({
+	    type: 'POST',
+	    async: false,   // WICHTIG! 
+	    url: DomainName+'LogIn/getSetAGBfile.php',
+	    data: ({
+	        AGBsText: AGBsText,
+	        info: 'platzhalter'
+	
+	   		 })
+		}).responseText;
+		
+		//getFilelist abrufen
+		getFilelist();
+     		
+     		
+     } else {
+     		
+     		signOut();
+     		console.log('AGB abgelehnt!');
+     }
+
+		
+  }
+</script>
+
+
+
+
+<script>
+  function signOut() {
+      
+      //Session zerstören
+      $.ajaxSetup({cache: false})
+		$.get(DomainName+'LogIn/getsession.php?logout=ja', function (data) {
+		});
+		
+		var result = "unbekannt";
+		result = $.ajax({
+	    type: 'POST',
+	    async: false,   // WICHTIG! 
+	    url: DomainName+'LogIn/getsession.php?logout=ja',
+	    data: ({
+	        uploadUserId: uploadUserId,
+	        uploadLogIn: uploadLogIn,
+	        aktuelleURL: window.location['hostname'],
+	        info: 'platzhalter'
+	
+	   		 })
+		}).responseText;
+		
+		console.log(result);
+		
+		//eingeloggtes Menu ausblenden
+		$('#LogInMenu').css('display', 'none');
+		$('#LogInMain').css('display', 'none');
+		//Google einloggbutton anzeigen, div und button
+     	$('#authorize-div').css('display', 'block');
+     	$('#signInButton').css('display', 'block');
+     	
+		
+  }
+</script>
+
+
+
+
+
+
+<script>
+  function deleteAccountLogIn() {
+  	
+  		//Sicherheitsabfrage
+		if (   confirm("Do you really want delte your Account? All files get deleted!")  )  {
+      
+      console.log("starte Account löschen...");
+      
+ 		var result = "unbekannt";
+		result = $.ajax({
+	    type: 'POST',
+	    async: false,   // WICHTIG! 
+	    url: DomainName+'LogIn/getDeleteAccount.php',
+	    data: ({
+	        aktuelleURL: window.location['hostname'],
+	        info: 'platzhalter'
+	
+	   		 })
+		}).responseText;
+     	
+     	if (result == "Account geloescht!") {
+     		
+     		signOut();
+     		loading_stop2();
+     		
+     	}
+     	
+     	
+	}
+		
+  }
+</script>
+
+
+
+
+
+
+
+
+<script>console.log('sessionVariableTest: ');</script><script>console.log('sessionID: 4aa1b35bb0a3683a8c0d15467ea6ec16');</script><div style="background:#FFFFFF;z-index:1000;width:265px;height:100%;overflow:hidden;position:fixed;left:0px;top:0px;border-style:solid;border-width:0px;" id="pages_overview"><div  style="background:#FFFFFF;z-index:1000;position:fixed;width:230px;left:25px;top:18px;border-style:solid;border-width:0px;"><a href='https://www.pdfzorro.com'><img border='0' src='logo_rechteck.png' align='center' width='95%' title='Startseite / Home'></a><div style = 'display:none' id='download_menu'><br><br><center>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- neu für menü -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:206px;height:90px"
+     data-ad-client="ca-pub-3993292205875193"
+     data-ad-slot="3229266265"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center><br><div id='angezeigter_dateiname' class='angezeigter_dateiname'>Filename: <b>20190515091104_001.pdf</b></div> <a href="javascript:einblenden_no_loading('rename');$('#rename_name').select()"><font color='#9D1B35'size='1'> rename</font></a><br><div id='rename' style='padding:10px;padding-top:20px;padding-bottom:20px;background-color:#CCCCCC;display:none;z-index:99999999;position:fixed;top:280px;left:12px;border-style:solid;border-width:1px;border-color:#333333'><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<div id='rename_eingabefelder'><input type="text" id="rename_name" value="20190515091104_001" style="width:200px; height:15px; font-family:Arial;font-size:10pt;"><span>.pdf</span><script type='text/javascript'>
+
+
+function rename_file_in_txt(){
+  var neuer_dateiname_ohne_punktPDF = document.getElementById('rename_name').value;
+  neuer_dateiname_ohne_punktPDF = btoa(neuer_dateiname_ohne_punktPDF);
+  //alert (neuer_dateiname_ohne_punktPDF);
+  onClickEvent_1('download_menu_rename_in_txt.php', '155791947777533', neuer_dateiname_ohne_punktPDF);
+}
+
+</script>
+
+<br><br><a href='javascript:rename_file_in_txt();'>OK</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="javascript:ausblenden('rename');">Cancel</a>
+
+
+
+
+</div>
+
+</div><div id='download_button'><br><a href='pdf/155791947777533/155791947777533.pdf' download='20190515091104_001.pdf'><img src='DOWNLOAD_download.png'  title='Download PDF-File' style='box-shadow: 2px 2px 2px #666666' alt='Download PDF File to your PC' width='200' ></a></div>
+<div id='gdrive_save_button'>
+<br>
+<a href='javascript:ausblenden("gdrive_save_button");einblenden_no_loading("gdrive_save_menu")'><img src='DOWNLOAD_gdrive.png' title='Save back to GoogleDrive' style='box-shadow: 2px 2px 2px #666666' alt='Save PDF File back to Google Drive' width='200'></a>
+<br>
+</div>
+<div id='gdrive_save_menu' style='display:none'>
+<br>
+
+<a href='https://chrome.google.com/webstore/detail/pdfzorro-pdf-editor/klihnfdjiglbiegpodnkhmpppbcmcmak' target='_blank'><img src='DOWNLOAD_gdrive_SAVE.png' alt='Save PDF File back to Google Drive' style='opacity:0.4; left:15px;' width='100' onMouseover="ddrivetip('not installed - click for installing PDFzorro from Chrome Webstore')" onMouseout="hideddrivetip()"></a>
+
+<a href='gdrive3_ohne_fileId.php?upload=155791947777533&fileId='><img src='DOWNLOAD_gdrive_SAVE_TO.png' title='Save to any other folder in your GoogleDrive' style='box-shadow: 2px 2px 2px #666666' alt='Save PDF File to any folder in your Google Drive' width='100'></a>
+
+<br>
+</div>
+<br><a href="javascript:click_verschluesseln('email_eingaben.php','155791947777533')"><img src='send_email.png'  title='Send PDF per email' style='box-shadow: 2px 2px 2px #666666' alt='Send PDF per email' width='200' ></a><br><br><img src='DOWNLOAD_delete.png' title='delete your files from PDFzorro´s server' width='200' style='box-shadow: 2px 2px 2px #666666' alt='Delete PDF file from PDFzorro Server' style='cursor:pointer' onclick="confirm_delete('HQ_pdffiles_clear.php','155791947777533' );   "><div id='zurueck_button_bei_finish'><br><br><a href='pdf2_HQ.php?hq_neu=1&upload=155791947777533&fileId='><img src='DOWNLOAD_back.png'  title='go back to editor' alt='Go back to PDF Online Editor' width='100'></a></div><center>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- neu für menü -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:206px;height:90px"
+     data-ad-client="ca-pub-3993292205875193"
+     data-ad-slot="3229266265"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</center><br><br>If you save the pdf back to GoogleDrive, your files get automatically deleted on our server.
+
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="margin-left:20px; border-collapse: collapse" bordercolor="#111111" width="200" id="AutoNumber1">
+    <tr>
+      <td><div id='menu'><p><div id="fileuploader_item" style="display:none;z-index:99;float:left;">
+
+
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function einblenden_x(div) {
+with(document.getElementById(div).style){
+if(display=="none"){
+display="inline";
+}
+else{
+display="none";
+}
+}
+}
+//-->
+</script>
+
+
+
+
+<script src="jquery.filestyle.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+            
+      $("input.file_1").filestyle({ 
+          image: "add_pdf_sw.jpg",
+          imageheight : 33,
+          imagewidth : 65,
+          width : 100
+         
+          
+          
+      });
+
+ 
+     
+  });
+</script>
+
+<div id='ebene_upload_x' style='display:none;'>
+<center>
+uploading PDF-File, this may take a moment...
+</center>
+<br>
+<br>
+
+</div>
+
+<form  id='frm' action='HQ_fileupload.php?upload=155791947777533&fileId=' method='post' enctype='multipart/form-data'>
+
+
+<input type='file' name='myfile' id='file' class='file_1' onMouseover="ddrivetip('add / upload file<br>(PDF,Word,Excel,Powerpoint,Image)')" onMouseout="hideddrivetip()" />
+
+<!--input type='file' name='myfile' id='file' /><br/-->
+
+</form>
+
+<script type='text/javascript'>
+<!--
+  $(document).ready(function(){
+     $('#file').change(function(){
+	einblenden_x('ebene_upload_x'),
+	window.setTimeout('$(\'#frm\').submit();', 1);
+     });
+  })
+-->
+</script>
+
+
+
+
+</div><div style="z-index:50; float:left;margin-right:5px;"><img border='0' src='loading.gif' width='33' height='33' align='center' title='fake'><img border='0' src='leer.png' width='22' height='33' align='center' title='fake'></div><div style="margin-bottom:5px;float:left;"><img border='0' style='cursor: pointer;box-shadow: 1px 1px 3px #666666;' src='pdf_download_sw_BREIT.png' width='135' height='33' align='center' title='download edited pdf' onclick="finish(155791947777533);"   >
+</div>
+
+
+
+
+</p>      
+    </td>
+    </tr>
+  </table>
+  </center>
+</div></div>
+
+<!--START DIV für Pages unter dem Menü-->
+<div id="pages" style="z-index:88;width:240px;height: calc(100% - 266px);position:fixed;overflow:auto;left:25px;top:240px;border-style:solid;border-width:0px;">
+
+
+
+<br><div align='left' id='more_options_button' style='margin-left:133px;margin-bottom:5px;z-index:99;'><a href="javascript:ausblenden('more_options_button');einblenden_no_inline('more_options')"><font color='#999999'  size='1'>advanced options</font></a></div><div align='left' id='more_options' style='box-shadow: 1px 1px 3px #666666;border-style:solid;border-width:1px;border-color:#c7c7c7;background-color:#E5E5E5;display:none; margin-bottom:8px; margin-left:11px;z-index:99;width:206px;height:67px;'>
+
+<img src='drehen_sw_all.png' alt='rotate all pages in the pdf file' height='28' style='float:left;cursor:pointer;margin:2px;margin-left:3px;' onclick="einblenden('ebene1'); setTimeout('onClickEvent_1(\'HQ_drehen_all.php\', \'155791947777533\', \'155791947777533\')', 10)" onMouseover="ddrivetip('rotate all pages')" onMouseout="hideddrivetip()" />
+
+<img border='0' height='28' src='add_blank_page.png' align='center' style='float:left;cursor:pointer;margin-top:4px;margin-left:0px;' onclick="einblenden('ebene1'); setTimeout('onClickEvent_1(\'HQ_addblank.php\', \'1\', \'155791947777533\')', 10)" onMouseover="ddrivetip('add a blank/white page')" onMouseout="hideddrivetip()" /></a>
+
+<div id='filesize_button' style='float:left;'>
+<img src='filesize.png' height='28' style='float:left;cursor:pointer;margin-top:4px;margin-left:2px;' onclick="info('Filesize: 0.23 MB');" onMouseover="ddrivetip('0.23 MB')" onMouseout="hideddrivetip()" />
+</div>
+
+<div id='nicht_compressed' style='float:left;'>
+<img src='compress.png' height='28' style='cursor:pointer;margin-top:4px;margin-left:5px;' onclick="einblenden('ebene1');abfrage_compress('155791947777533','0.23 MB');" onMouseover="ddrivetip('reduce filesize, but also lost quality')" onMouseout="hideddrivetip()" />
+</div>
+
+<div id='schon_compressed' style='float:left;display:none;'>
+<img src='compress_transp.png' height='28' title='file is already max. compressed' style='margin-top:4px;margin-left:5px;' onMouseover="ddrivetip('file is already max. compressed')" onMouseout="hideddrivetip()" />
+</div>
+
+<div id='verschluesseln_button' style='float:left;'>
+<img src='verschluesseln.png' height='28' style='float:left;cursor:pointer;margin-top:4px;margin-left:5px;' onclick="click_verschluesseln('verschluesseln_auslesen.php','155791947777533');" onMouseover="ddrivetip('encrypt/secure pdf file')" onMouseout="hideddrivetip()" />
+</div>
+
+<div id='fileinfo_button' style='float:left;'>
+<img src='fileinfo.png' height='28' style='float:left;cursor:pointer;margin-top:4px;margin-left:5px;' onclick="click_verschluesseln('fileinfo_auslesen.php','155791947777533');" onMouseover="ddrivetip('set pdf file information, e.g. author')" onMouseout="hideddrivetip()"  />
+</div>
+
+<div style='float:right;text-declaration:none'>
+<a href="javascript:ausblenden('more_options');einblenden_no_loading('more_options_button')" style='text-decoration:none;'>x&nbsp;</a>
+</div>
+
+<br>
+
+<!--  onclick=" setTimeout('click_loeschen_more(\'loeschen_more_einlesen.php\', \'155791947777533\', \'155791947777533\')', 10)"    -->
+
+<img src='loeschen_more.png' alt='delete more pages of the pdf' height='28' style='position:relative;left:-124px;cursor:pointer;margin:2px;margin-left:3px;margin-top:4px;' onclick='kb_source_2_target("HQ_deletes_GUI.php?seite=&upload=155791947777533&fileId=")' onMouseover="ddrivetip('select page(s) to delete')" onMouseout="hideddrivetip()" />
+
+<img src='extract_more.png' alt='extract pages of the pdf' height='28' style='position:relative;left:-128px;cursor:pointer;margin:2px;margin-left:3px;margin-top:4px;' onclick='kb_source_2_target("HQ_extract_GUI.php?seite=&upload=155791947777533&fileId=")' onMouseover="ddrivetip('select page(s) to extract')" onMouseout="hideddrivetip()" />
+
+<img src='shrink.png' alt='print multiple pdf pages on one sheet, shrink pdf' height='28' style='position:relative;top:-36px;left:60px;cursor:pointer;margin:2px;margin-left:3px;margin-top:4px;' onclick=" setTimeout('kb_source_2_target(\'HQ_shrink.php?upload=155791947777533\')', 10)" onMouseover="ddrivetip('print multiple (2 or 4) pages on one sheet')" onMouseout="hideddrivetip()" />
+
+<img src='add_letter.png' alt='extract pages of the pdf' height='28' style='position:relative;top:-37px;left:57px;cursor:pointer;margin:2px;margin-left:3px;margin-top:4px;' onclick="window.location='https://letter.pdfzorro.com?upload=155791947777533';" onMouseover="ddrivetip('add a Letter to the PDF')" onMouseout="hideddrivetip()" />
+
+<img src='export_office.png' alt='convert to Word, Excel, Powerpoint, DXF, XML or HTML' height='28' style='position:relative;top:-37px;left:54px;cursor:pointer;margin:2px;margin-left:3px;margin-top:4px;' onclick=" setTimeout('kb_source_2_target(\'HQ_convert_GUI.php?upload=155791947777533\')', 10)" onMouseover="ddrivetip('convert to Word, Excel, Powerpoint, DXF, XML or HTML')" onMouseout="hideddrivetip()" />
+
+
+</div>
+
+<br>
+
+<table style='margin-left:10px;' border='0' cellspacing='1' id='AutoNumber1' width='200' height='22'>  	<tr>    	<td  align='left' bgcolor='E5E5E5'>  
+<div style='float:left;margin-top:6px;margin-left:5px;'>
+<span id='seitenname_1' style='font-weight:bold;vertical-align:middle; font-size: 11pt'><span onclick="javascript:einblenden('ebene1'); setTimeout('kb_source_2_target(\'EDITOR_editor.php?seite=1&upload=155791947777533&fileId=\', \'155791947777533\',\'1\')', 10)">Page:</span> 1  <br></span>
+</div>
+<div style='float:left;margin-left:8px;'><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin:1px; margin-bottom:4px; border: 0px solid #666666'border='0' width='25' src='loeschen_sw.jpg' align='center' onclick="einblenden('ebene1'); setTimeout('onClickEvent_1(\'HQ_loeschen.php\', \'1\', \'155791947777533\')', 10)" onMouseover="ddrivetip('delete page')" onMouseout="hideddrivetip()"  /><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin:-3px; margin-left:0px; margin-right:1px; margin-bottom:4px; border: 0px solid #666666'border='0' width='25' src='auf_sw.jpg' align='center' onclick="einblenden('ebene1'); setTimeout('onClickEvent_1(\'HQ_rauf.php\', \'1\', \'155791947777533\')', 10)" onMouseover="ddrivetip('move page up')" onMouseout="hideddrivetip()" /><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin:-3px; margin-left:0px; margin-right:1px; margin-bottom:4px; border: 0px solid #666666'border='0' width='25' src='ab_sw.jpg' align='center' onclick="einblenden('ebene1'); setTimeout('onClickEvent_1(\'HQ_runter.php\', \'1\', \'155791947777533\')', 10)" onMouseover="ddrivetip('move page down')" onMouseout="hideddrivetip()" /><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin-left:1px; margin-bottom:4px;border: 0px solid #666666'border='0' width='25' src='drehen_sw.jpg' align='center' onclick="einblenden('ebene1'); setTimeout('onClickEvent_1(\'HQ_drehen.php\', \'1\', \'155791947777533\')', 10)" onMouseover="ddrivetip('rotate')" onMouseout="hideddrivetip()" /><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin-left:1px; margin-bottom:4px;border: 0px solid #666666'border='0' width='25' src='duplicate.png' align='center' onclick="einblenden('ebene1'); setTimeout('onClickEvent_1(\'HQ_duplicate.php\', \'1\', \'155791947777533\')', 10)" onMouseover="ddrivetip('duplicate this page')" onMouseout="hideddrivetip()" /><br><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin-left:1px; margin-bottom:4px;border: 0px solid #666666'border='0' width='25' src='add_image.png' align='center' onclick="javascript:einblenden('ebene1'); setTimeout('kb_source_2_target(\'HQ_Insert_Image_Uploadseite.php?seite=1&links=a0_platzhalter*/pdf/155791947777533/output-1.png&upload=155791947777533&fileId=\', \'155791947777533\',\'1\', \'a0_platzhalter*/pdf/155791947777533/output-1.png\', \'NO_AUSBLENDEN\' )', 10)" onMouseover="ddrivetip('add an image to this page')" onMouseout="hideddrivetip()" /><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin-left:1px; margin-bottom:4px;border: 0px solid #666666'border='0' width='25' src='crop_and_move.png' align='center' onclick="javascript:einblenden('ebene1'); setTimeout('kb_source_2_target(\'HQ_Crop.php?seite=1&links=a0_platzhalter*/pdf/155791947777533/output-1.png&upload=155791947777533&fileId=\', \'155791947777533\',\'1\', \'a0_platzhalter*/pdf/155791947777533/output-1.png\', \'platzhalter\' )', 10)" onMouseover="ddrivetip('cut/copy/crop and move an area on any page')" onMouseout="hideddrivetip()" /><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin-left:1px; margin-bottom:4px;border: 0px solid #666666'border='0' width='25' src='export_jpg.png' align='center' onclick="javascript:einblenden('ebene1'); setTimeout('kb_source_2_target(\'HQ_Crop_IMAGE.php?seite=1&links=a0_platzhalter*/pdf/155791947777533/output-1.png&upload=155791947777533&fileId=\', \'155791947777533\',\'1\', \'a0_platzhalter*/pdf/155791947777533/output-1.png\', \'platzhalter\' )', 10)" onMouseover="ddrivetip('export page to image')" onMouseout="hideddrivetip()" /><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin-left:1px; margin-bottom:4px;border: 0px solid #666666'border='0' width='25' src='DINresize.jpg' align='center' onclick="javascript:einblenden('ebene1'); setTimeout('kb_source_2_target(\'HQ_Resize_Pageformat.php?seite=1&links=a0_platzhalter*/pdf/155791947777533/output-1.png&upload=155791947777533&fileId=\', \'155791947777533\',\'1\', \'a0_platzhalter*/pdf/155791947777533/output-1.png\', \'platzhalter\' )', 10)" onMouseover="ddrivetip('change page format (e.g. DIN A3 -> DIN A4)')" onMouseout="hideddrivetip()" /><img style='position:relative;left:-6px;top:3px;cursor: pointer; margin-left:1px; margin-bottom:4px;border: 0px solid #666666'border='0' width='25' src='extract_sw.png' align='center' onclick="einblenden('ebene1'); setTimeout('abfrage_extract(\'HQ_extract.php\', \'1\', \'155791947777533\')', 10)" onMouseover="ddrivetip('extract this page, others get deleted')" onMouseout="hideddrivetip()" /></div> </td></tr>   <tr>    <td width='200'> 
+
+
+<img onclick="javascript:einblenden('ebene1'); setTimeout('kb_source_2_target(\'EDITOR_editor.php?seite=1&upload=155791947777533&fileId=\', \'155791947777533\',\'1\', \'a0_platzhalter*/pdf/155791947777533/output-1.png\')', 10)" style='cursor: pointer;margin-top:3px; border: 2px solid #C5C5C5' src='pdf/155791947777533/thumb-1.png' id='image1'width='200' align='center' title='Seite bearbeiten / Edit page'>
+
+     </td>   </tr> </table>     <br>
+<!--  diese DIV nur, um beim scrollen wPaint auch ganz oben noch zu ueberdecken   -->
+<div style='z-index:900;position:fixed; width:100% ; height:1px; bottom:0px; left:0px; background:#FFFFFF;'>
+</div>
+
+<div style='z-index:10000;position:fixed; width:100% ; height:18px; bottom:1px; left:0px; background:#FFFFFF;'>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- textlink 700px breit überall -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:15px"
+     data-ad-client="ca-pub-3993292205875193"
+     data-ad-slot="2314517066"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+</div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- neu für menü -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:206px;height:90px"
+     data-ad-client="ca-pub-3993292205875193"
+     data-ad-slot="3229266265"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<p align="center"><a href="impressum.php" style="text-decoration: none">Impressum</a>&nbsp;&nbsp;&nbsp;
+<a href="terms.php" style="text-decoration: none">Terms</a>&nbsp;&nbsp;&nbsp;
+<a style="text-decoration: none" href="mailto:info@pdfzorro.com?subject=PDFzorro">
+Contact</a></p>
+
+
+
+<!----- END DIV PAGES   -->
+</div>
+
+</div>
+
+
+
+
+<!----- start DIV EDIT   -->
+
+<div id="target" style="position:absolute;left:265px; padding-right:5px; width: calc(100% - 270px);  top:58px;height: calc(100% - 80px)    border-style:solid;border-width:0px;">
+
+
+</div>
+
+
+<script>
+
+//Hauptseite bzw. Startseite wird in die Main-DIV (target) geladen
+//window.onload = kb_source_2_target("MAIN_start.php");
+
+window.onload = kb_source_2_target('MAIN_start.php?stop=nein');
+
+</script>
+
+<script>
+einblenden('fileuploader_item');
+
+//more options auch gleich einblenden
+ausblenden('more_options_button');
+einblenden_no_inline('more_options');
+
+</script>
+<!--script>
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//ACHTUNG - Nur notwenig, weil Item vom Fileuploader nicht angezeigt wird, drum wird die PHP erst reingeladen wenn die Seite komplett aufgebaut ist
+function load_fileuploader_item(php_seite, a_info, b_info, c_info, d_info, e_info) {
+		$.get(php_seite, function(data) {
+		$('#fileuploader_item').html(data);
+        })	
+        }
+            
+load_fileuploader_item('HQ_fileuploader.php?upload=155791947777533&fileId=');
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+</script-->
+
+
+
+
