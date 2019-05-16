@@ -36,7 +36,7 @@
     height:60px;
     
 }
-.fondface, .fondtrip, .fondgoogle{
+.fondface, .fondtrip, .fondgoogle, .fondreservation{
     top: -60px;
     z-index:2;
     display: block;
@@ -44,6 +44,9 @@
     height:60px;
     position: absolute;
     transition:0.5s; 
+}
+.fondreservation{
+	background-color: red;
 }
 .fondface{
     background-color:blue;
